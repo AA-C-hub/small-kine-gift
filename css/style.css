@@ -787,7 +787,7 @@ section:has(observe-me){
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transform: translateX(1.38%);
+    transform: translateX(0.5%);
 }
 
 /* --MERCH FOLDER-- */
@@ -795,10 +795,29 @@ section:has(observe-me){
     background-color: var(--color-background-merch);
 }
 
-.merch img{
+.head-merch{
+    /* border: 1px solid red; */
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.merch1,
+.merch3,
+.merch5 {
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(60%, 10%);
+}
+.merch2,
+.merch4 {
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-60%, 10%);
 }
 
 /* --WHAT FOLDER-- */
