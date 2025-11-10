@@ -184,6 +184,15 @@ img{
     text-align: center;
 }
 
+.img-center{
+    margin-inline: auto;
+    display: block;
+}
+.img-right{
+    margin-left: auto;
+    display: block;
+}
+
 /* CENTER PARAGRAPHS INSIDE CENTERED PARENTS */
 .text-center p{
     margin-inline: auto;
@@ -220,10 +229,18 @@ html {
 }
 
 /* LAYOUT */
-/* CONTAINER */
-.container{
-    /* max-width: 1200px; */
+
+.site-wrapper{
+    max-width: 1920px;
     margin-inline: auto;
+    /* padding-inline:var(--unit-s); */
+    padding-left: 1em;
+}
+
+/* CONTAINER */
+.container {
+    /* max-width: 1200px; */
+    /* margin-inline: auto; */
     /* padding-inline:var(--unit-s); */
 }
 
@@ -602,11 +619,11 @@ pre:has(code){
 /* CUSTOM SITE STYLING */
 
 /* PUSH THE FOOTER TO THE BOTTOM BY DEFAULT */
-body{
+/* body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100svh;
-}
+} */
 
 /* TO FIX OVERFLOW WORD BREAK */
 body > *{
@@ -770,24 +787,11 @@ section:has(observe-me){
     background-color: var(--color-background-main);
 }
 
-.main img{
-    /* border: 1px solid red; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* --ABOUT FOLDER-- */
 .about {
     background-color: var(--color-background-about);
-}
-
-.paper{
-    /* border: 1px solid red; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(0.5%);
 }
 
 /* --MERCH FOLDER-- */
@@ -795,11 +799,13 @@ section:has(observe-me){
     background-color: var(--color-background-merch);
 }
 
-.head-merch{
+.head-merch,
+.head-what{
     /* border: 1px solid red; */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 2em;
 }
 
 .merch1,
@@ -807,22 +813,25 @@ section:has(observe-me){
 .merch5 {
     /* border: 1px solid red; */
     display: block;
-    margin-left: auto;
+    height: auto;
     margin-right: auto;
-    transform: translate(60%, 10%);
+    padding: 2em;
+    /* transform: translate(60%, 10%); */
 }
 .merch2,
 .merch4 {
     /* border: 1px solid red; */
     display: block;
-    margin-left: auto;
+    height: auto;
     margin-right: auto;
-    transform: translate(-60%, 10%);
+    padding: 2em;
+    /* transform: translate(-60%, 10%); */
 }
 
 /* --WHAT FOLDER-- */
 .what {
     background-color: var(--color-background-bottom);
+    height: 200svh;
 }
 
 /* SKG Header */
@@ -886,6 +895,4 @@ section:has(observe-me){
   main {
     margin-left: 50px;
   }
-
-
 
