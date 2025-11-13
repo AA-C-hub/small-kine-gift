@@ -794,6 +794,18 @@ section:has(observe-me){
     background-color: var(--color-background-about);
 }
 
+.textbox-right{
+    border: 1px solid red;
+}
+
+.about-text{
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+
 /* --MERCH FOLDER-- */
 .merch {
     background-color: var(--color-background-merch);
