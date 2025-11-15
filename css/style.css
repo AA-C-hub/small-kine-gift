@@ -83,11 +83,12 @@ TABLE OF CONTENTS
     /* SET SEMANTIC COLORS */
     --color-body-background: var(--color-yellow);
     --color-body-text: var(--color-purple);
-    --color-body-text-dark: var(--color-purple-400);
+    --color-body-text-dark: var(--color-purple-900);
     --color-background-main: var(--color-orange);
     --color-background-about: var(--color-pink-about);
     --color-background-merch: var(--color-teal);
     --color-background-bottom: var(--color-purple-bottom);
+    --color-text: var(--color-yellow);
 
 
     --color-primary: var(--color-pink-900);
@@ -139,6 +140,10 @@ h1, h2, h3{
     text-wrap: balance;
 }
 
+span {
+    color: var(--color-black);
+}
+
 /* REMOVES WIDOWS */
 p{
     text-wrap: pretty;
@@ -184,7 +189,8 @@ img{
     text-align: center;
 }
 
-.img-center{
+.img-center,
+.div-center{
     margin-inline: auto;
     display: block;
 }
@@ -192,6 +198,7 @@ img{
     margin-left: auto;
     display: block;
 }
+
 
 /* CENTER PARAGRAPHS INSIDE CENTERED PARENTS */
 .text-center p{
@@ -902,7 +909,13 @@ section:has(observe-me){
     transform: rotate(5deg) translate(100px, -240px);
 }
 
-.socials {
-    display: inline-flex;
-    justify-content: center;
+
+/* SPAN TEXT */
+
+.socials span{
+    position:absolute;
+    font-size: .75rem;
+    text-align: center;
+    transform: translate(60px, 200px);
 }
+
