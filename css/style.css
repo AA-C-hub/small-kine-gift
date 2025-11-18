@@ -120,8 +120,8 @@ TABLE OF CONTENTS
     --container-width: 1200px;
 
     /* GLOBAL TYPOGRAPHY */
-    --font-body: Helvetica, arial, sans-serif;
-    --font-headings: Georgia, Times, serif;
+    --font-body: "Jersey 25", Helvetica, arial, sans-serif;
+    --font-headings: "Jersey 25", Georgia, Times, serif;
 }
 
 /* SET GLOBAL COLORS */
@@ -172,6 +172,14 @@ h1, h2, h3, h4{
     font-family: var(--font-headings);
 }
 
+.jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
 /* GLOBAL MEDIA */
 
 /* IMAGES
@@ -215,6 +223,15 @@ img{
     left: -9999px;
 }
 
+.about p{
+    border: 1px solid red;
+    background-color: #fff;
+    border: var(--color-border) 1px solid;
+    display: inline-block;
+    padding: var(--unit-l);
+    border-radius: 5px;
+}
+
 /* GLOBAL RESETS */
 
 /* Remove the default 8pm margin on body */
@@ -249,6 +266,13 @@ html {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline:var(--unit-s);
+}
+
+/* ABOUT DIV CONTAINER */
+.about-container{
+    max-width: 700px;
+    padding: 2em;
+    margin: auto;
 }
 
 /* GRID SYSTEM (12 COLUMN) */
@@ -792,14 +816,16 @@ section:has(observe-me){
 
 /* --MAIN FOLDER-- */
 .main{
-    background-color: var(--color-background-main);
+    background-image: url('../img/skg-section1-orange.svg');
+    background-size: cover;
 }
 
 
 
 /* --ABOUT FOLDER-- */
 .about {
-    background-color: var(--color-background-about);
+    background-image: url('../img/about-bg.svg');
+    background-size: cover;
 }
 
 .about-content{
@@ -813,7 +839,8 @@ section:has(observe-me){
 
 /* --MERCH FOLDER-- */
 .merch {
-    background-color: var(--color-background-merch);
+    background-image: url('../img/merch-bg.svg');
+    background-size: cover;
 }
 
 .head-merch,
@@ -821,7 +848,11 @@ section:has(observe-me){
     padding: 3em 0 3em 0;
 }
 
-
+/* FOOTER FOLDER */
+.what {
+    background-image: url('../img/footer-bg.svg');
+    background-size: cover;
+}
 
 /* SKG Header */
 
