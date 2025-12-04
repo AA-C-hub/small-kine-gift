@@ -191,10 +191,17 @@ h1, h2, h3, h4{
     Responsive on small screens Do not stretch too large (beyond the original
     on large screens */
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
+
+svg {
+    max-width: 100%; /* Ensures the SVG doesn't exceed its container's width */
+    height: auto;    /* Maintains the aspect ratio of the SVG */
+    display: block;  /* Removes extra space below the SVG, treating it like a block element */
+    margin: auto;
+  }
 
 /* GLOBAL HELPERS */
 
@@ -887,9 +894,83 @@ section:has(observe-me){
 
 /* FOOTER FOLDER */
 .what {
-    background-image: url('../img/footer-bg.svg');
+    /* background-image: url('../img/footer-bg.svg'); */
     background-size: cover;
 }
+
+.location-imgs{
+    display: grid;
+    justify-content: center;
+    padding-top: 2em;
+    gap: 1.5em;
+}
+
+.location-container {
+    padding: 2em;
+    margin-inline: auto;
+    display: block;
+    max-width: 1000px;
+    border: var(--color-border) 1px solid;
+    border-radius: var(--border-radius);
+    gap: var(--unit-s);
+    transform: translateY(-200px);
+}
+.beads {
+    transform: rotate(15deg) translateY(-70px);
+}
+
+.tv-map {
+    transform: rotate(10deg) translateY(-120px);
+}
+
+.location-imgs{
+    transform: translateY(-100px);
+}
+
+.locationimg-2{
+    transform: translateY(-50px);
+}
+
+.locationimg-3{
+    transform: translateY(-140px);
+}
+
+.flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Creates 3D perspective */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Smooth transition for the flip */
+    transform-style: preserve-3d; /* Enables 3D transformations for children */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flips the card on hover */
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back when facing away */
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg); /* Initially rotated to be hidden */
+  }
 
 /* SKG Header */
 
