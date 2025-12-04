@@ -935,6 +935,7 @@ section:has(observe-me){
     transform: translateY(-140px);
 }
 
+/* FLIP CARD ANIMATION */
 .flip-card {
     width: 300px;
     height: 200px;
