@@ -110,7 +110,7 @@ TABLE OF CONTENTS
 
     /* BORDER */
     --color-border: var(--color-grey-200);
-    --border-radius: 5px;
+    --border-radius: 10px;
     --border-thickness: .5px;
 
     /* SIZING UNITES */
@@ -271,6 +271,10 @@ html {
     margin-inline: auto;
     /* padding-inline:var(--unit-s); */
     padding-left: 1em;
+}
+
+.skg-main {
+    overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -610,7 +614,13 @@ button.col-3.push-4:hover{
     color: var(--color-white);
 }
 
+.button.rotate-right{
+    rotate: 5deg;
+}
 
+.button.rotate-left{
+    rotate: -7deg;
+}
 
 /* HR */
 
@@ -892,6 +902,18 @@ section:has(observe-me){
     padding: 3em 0 3em 0;
 }
 
+.price-tag {
+    background-color: tan;
+    padding: 2em;
+    border-radius: var(--border-radius);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 /* FOOTER FOLDER */
 .what {
     /* background-image: url('../img/footer-bg.svg'); */
@@ -906,7 +928,7 @@ section:has(observe-me){
 }
 
 .location-container {
-    padding: 2em;
+    padding: 3em;
     margin-inline: auto;
     display: block;
     max-width: 1000px;
@@ -963,12 +985,12 @@ section:has(observe-me){
   }
   
   .flip-card-front {
-    background-color: #bbb;
+    /* background-color: #bbb; */
     color: black;
   }
   
   .flip-card-back {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
     color: white;
     transform: rotateY(180deg); /* Initially rotated to be hidden */
   }
