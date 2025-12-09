@@ -932,8 +932,6 @@ section:has(observe-me){
     margin-inline: auto;
     display: block;
     max-width: 1000px;
-    border: var(--color-border) 1px solid;
-    border-radius: var(--border-radius);
     gap: var(--unit-s);
     transform: translateY(-200px);
 }
@@ -962,6 +960,7 @@ section:has(observe-me){
     width: 300px;
     height: 200px;
     perspective: 1000px; /* Creates 3D perspective */
+    rotate: -7deg;
   }
   
   .flip-card-inner {
@@ -994,6 +993,22 @@ section:has(observe-me){
     color: white;
     transform: rotateY(180deg); /* Initially rotated to be hidden */
   }
+
+/* FLIP CARD CONTAINER */
+.flip-card-container{
+    display: flex;
+    justify-content: center;
+    gap: var(--unit-l);
+    transform: translateY(-100px);
+}
+
+@media ( width < 768px ) {
+    .flip-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
 
 /* SKG Header */
 
