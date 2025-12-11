@@ -119,6 +119,7 @@ TABLE OF CONTENTS
     --unit-l: 3em;
     --unit-xl: 4em;
     --unit-xxl: 5em;
+    --unit-huge: 8em;
     --unit-gutter: 1.5em;
     --container-width: 1200px;
 
@@ -426,6 +427,10 @@ html {
     color: var(--color-purple-900);
 }
 
+.tabs img{
+    transform: translateY(-5px);
+}
+
 /* MENU BUTTON */
 .site-nav .menubutton{
     position: relative;
@@ -551,6 +556,23 @@ section {
 
 
 /* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: var(--unit-huge);
+}
+
+.footer h1 {
+    color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .site-footer{
     background-color: var(--color-footer-background);
     padding: var(--unit-s);
@@ -903,7 +925,7 @@ section:has(observe-me){
 }
 
 .price-tag {
-    background-color: tan;
+    background-color: rgb(239, 213, 177);
     padding: 2em;
     border-radius: var(--border-radius);
 
