@@ -540,10 +540,6 @@ html {
     background-color: transparent;
 }
 
-section {
-    /* padding-block: var(--unit-l); */
-}
-
 .hero{
     background-color: var(--color-hero-background);
     padding-block: var(--unit-xxl);
@@ -665,10 +661,6 @@ pre:has(code){
 .swiper {
     padding-block-end: 2rem;
     text-align: center;
-}
-
-
-.swiper-wrapper {
 }
 
 /* MOVE SWIPER ARROWS OUTSIDE OF SWIPER */
