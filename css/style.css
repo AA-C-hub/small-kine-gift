@@ -237,12 +237,7 @@ svg {
 }
 
 .about p{
-    border: 1px solid red;
-    background-color: #fff;
-    border: var(--color-border) 1px solid;
-    display: inline-block;
-    padding: var(--unit-l);
-    border-radius: 5px;
+    color: var(--color-black);
 }
 
 /* GLOBAL RESETS */
@@ -287,9 +282,66 @@ html {
 
 /* ABOUT DIV CONTAINER */
 .about-container{
-    max-width: 700px;
+    max-width: 900px;
     padding: 2em;
     margin: auto;
+    display: flex;
+}
+
+.about-card {
+    background-color: #fff;
+    border: var(--color-border) 1px solid;
+    display: inline-block;
+    padding: var(--unit-s);
+    border-radius: 5px;
+}
+
+.polaroid-card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 20px;
+    max-width: 500px; /* Adjust as needed */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens if necessary */
+    border: var(--color-border) 1px solid;
+    display: inline-block;
+    padding: var(--unit-s);
+    border-radius: 5px;
+    transform: rotate(-3deg);
+}
+
+.card-image-container img {
+    max-width: 100%; /* Ensures image fits within its container */
+    height: auto;
+    display: block; /* Helps with alignment */
+}
+
+.card-content {
+    flex: 1; /* Takes up available space */
+    padding-left: 10px; /* Space between image and text */
+    transform: rotate(3deg);
+}
+
+.card-content h1{
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card-content p {
+    color:#fff;
+}
+
+@media ( width < 768px ) {
+    .about-container{
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    
+
+    .card-image-container {
+        margin-bottom: 15px; /* Space between image and text */
+    }
 }
 
 /* GRID SYSTEM (12 COLUMN) */
@@ -1092,6 +1144,14 @@ section:has(observe-me){
     display: grid;
     justify-content: center;
     gap: var(--unit-s);
+}
+
+#about1 {
+    transform: rotate(5deg);
+}
+
+#about2 {
+    transform: rotate(-5deg) translate(-50px, -40px);
 }
 
 #kewpie{
