@@ -293,7 +293,7 @@ html {
 /* ABOUT DIV CONTAINER */
 .about-container{
     max-width: 900px;
-    padding: 2em;
+    padding: 0 4em 4em 4em;
     margin: auto;
     display: flex;
 }
@@ -931,7 +931,7 @@ section:has(observe-me){
 
 /* --MAIN FOLDER-- */
 .main{
-    background-image: url('../img/section1-stars.svg');
+    background-image: url('../img/stars-skg-bg.gif');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -1249,11 +1249,15 @@ section:has(observe-me){
 
 }
 
+.price-container{
+    text-align: center;
+}
+
 /* MERCH CONATINER */
 .merch-container{
     max-width: 1000px;
     margin: auto;
-    padding: var(--unit-m);
+    padding: var(--unit-l);
 }
 
 /* MERCH GRID */
@@ -1267,6 +1271,76 @@ section:has(observe-me){
 @media ( width < 768px ) {
     .merch-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* TILT ANIMATION ON HOVER */
+.tilt-scale {
+    transition: transform 0.35s ease;
+}
+
+.tilt-scale:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.tilt-scale2 {
+    transition: transform 0.35s ease;
+}
+
+.tilt-scale2:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+
+
+/* FLOAT ANIMATION */
+.float {
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float-2 {
+    animation: floatUpDown 3s ease-in-out infinite;
+    rotate: -2deg;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float-3 {
+    animation: floatUpDown 4s ease-in-out infinite;
+    rotate: 3deg;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
