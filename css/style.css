@@ -652,6 +652,7 @@ html {
     display: inline-block;
     padding: var(--unit-s);
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / .1);
 }
 
 .color-swatch {
@@ -1009,14 +1010,9 @@ section:has(observe-me){
     display: block;
     max-width: 1000px;
     gap: var(--unit-s);
-    transform: translateY(-200px);
 }
 .beads {
     transform: rotate(15deg) translateY(-70px);
-}
-
-.tv-map {
-    transform: rotate(10deg) translateY(-120px);
 }
 
 .location-imgs{
@@ -1051,6 +1047,11 @@ section:has(observe-me){
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); /* Flips the card on hover */
   }
+
+  /* Pause before flipping back */
+.flip-card:not(:hover) .flip-card-inner {
+    transition-delay: 1s; /* pause before unflipping */
+}
   
   .flip-card-front, .flip-card-back {
     position: absolute;
@@ -1343,4 +1344,67 @@ section:has(observe-me){
         transform: translateY(0);
     }
 }
+
+/* TV MAP ANIMATION */
+.tv-container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.tv-map {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Bead rows */
+.beads-row {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.bead-frame{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Adjust placement on TV */
+.beads-row.top {
+    top: 80px;
+    left: 120px;
+}
+
+.beads-row.bottom {
+    top: 150px;
+    left: 180px;
+}
+
+/* Bead styling + animation */
+.beads-row img {
+    width: 50px;
+    height: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Slight stagger for natural movement */
+.beads-row img:nth-child(odd) {
+    animation-delay: 0.4s;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
