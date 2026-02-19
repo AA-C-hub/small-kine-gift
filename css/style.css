@@ -974,10 +974,24 @@ section:has(observe-me){
     background-size: cover;
 }
 
-.head-merch,
-.head-what {
+.head-merch {
     padding: 3em 0 3em 0;
 }
+
+.breathing {
+    animation: breathe 4s ease-in-out infinite;
+  }
+  
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
 .price-tag {
     background-color: rgb(239, 213, 177);
@@ -992,10 +1006,6 @@ section:has(observe-me){
 }
 
 /* FOOTER FOLDER */
-.what {
-    /* background-image: url('../img/footer-bg.svg'); */
-    background-size: cover;
-}
 
 .location-imgs{
     display: grid;
@@ -1407,4 +1417,12 @@ section:has(observe-me){
     }
 }
 
+/* LEARN MORE */
+.learn-more{
+    padding: 5em;
+}
 
+.learn {
+    background-image: url('../img/learn-more-bg.svg');
+    background-size:cover;
+}

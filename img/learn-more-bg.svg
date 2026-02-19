@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1856.1 4130">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6a59ce;
+        stroke-width: 0px;
+      }
+    </style>
+    <image id="image" width="1478" height="1029" xlink:href="../../../NMA &apos;25 FALL/ART258/skg-pngs/purple-star.png"/>
+  </defs>
+  <rect class="cls-1" x="294.68" y="133" width="1001.32" height="3997"/>
+  <use transform="translate(35.86 69.33) rotate(-4.68) scale(.58 .71) skewX(-1.95)" xlink:href="#image"/>
+  <use transform="translate(851.35 649.32) rotate(13.72) scale(.58 .7) skewX(5.51)" xlink:href="#image"/>
+  <use transform="translate(97.33 1444.28) rotate(7.3) scale(.58 .71) skewX(3.02)" xlink:href="#image"/>
+  <use transform="translate(711.39 2340.97) rotate(-13.79) scale(.7 .83) skewX(-5.41)" xlink:href="#image"/>
+  <use transform="translate(0 3128.82) rotate(-4.05) scale(.7 .83) skewX(-1.65)" xlink:href="#image"/>
+</svg>
